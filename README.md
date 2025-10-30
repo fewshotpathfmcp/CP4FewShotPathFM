@@ -9,12 +9,12 @@ python prototype.py --embeddings "C:\path\to\embeddings.pt"
 
 ### Baseline++ Cosine Classifier
 ```bash
-python Baseline++.py --embeddings "C:\path\to\embeddings.pt"
+python baseline++.py --embeddings "C:\path\to\embeddings.pt"
 ```
 
 ### Logistic Regression Baseline
 ```bash
-python Baseline.py --embeddings "C:\path\to\embeddings.pt"
+python baseline.py --embeddings "C:\path\to\embeddings.pt"
 ```
 
 Notes:
