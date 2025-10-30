@@ -7,9 +7,9 @@ Run any experiment script directly from your terminal. From this folder:
 python prototype.py --embeddings "C:\path\to\embeddings.pt"
 ```
 
-### Cosine Classifier
+### Baseline++ Cosine Classifier
 ```bash
-python COSINE.PY --embeddings "C:\path\to\embeddings.pt"
+python baseline++.py --embeddings "C:\path\to\embeddings.pt"
 ```
 
 ### Logistic Regression Baseline
