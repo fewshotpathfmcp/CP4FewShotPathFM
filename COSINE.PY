@@ -1,16 +1,5 @@
 #!/usr/bin/env python3
-"""
-🎯 FINAL CONFORMAL PREDICTION EXPERIMENT
-Comprehensive comparison of THR vs APS vs RAPS with full metrics and analysis.
 
-This script implements the complete experimental pipeline with:
-- Three methods: THR (threshold-based) vs APS (standard adaptive) vs RAPS (safe/regularized)
-- Full K-shot range: [1, 2, 5, 10, 20, 50]
-- Complete trial counts for robust statistics
-- Advanced rank-based metrics (MRTL, R1CR, MRR, RTC)
-- Clinical workload metric (RTC: Rank to Correct)
-- Final analysis and visualization
-"""
 
 # =============================================================================
 # SETUP AND IMPORTS
@@ -1088,9 +1077,7 @@ def run_final_experiment(embedding_file: str = None):
     return all_results, summary_data
 
 
-# =============================================================================
-# COLAB CONVENIENCE FUNCTIONS
-# =============================================================================
+
 
 if IN_COLAB:
     def print_instructions():
