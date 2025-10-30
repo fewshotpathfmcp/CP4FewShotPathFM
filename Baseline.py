@@ -47,6 +47,7 @@ from pathlib import Path
 import json
 import csv
 from datetime import datetime
+import argparse
 import matplotlib.pyplot as plt
 import seaborn as sns
 from tqdm.auto import tqdm
@@ -975,5 +976,7 @@ if __name__ == "__main__":
         print("🚀 FINAL EXPERIMENT - GOOGLE COLAB VERSION")
         print_instructions()
     else:
-        # Run directly if local
-        run_final_experiment()
+        parser = argparse.ArgumentParser(description="Run the final conformal prediction experiment (Logistic regression baseline)")
+        parser.add_argument("-e", "--embeddings", type=str, default=None, help="Path to embeddings .pt file")
+        args = parser.parse_args()
+        run_final_experiment(embedding_file=args.embeddings)
