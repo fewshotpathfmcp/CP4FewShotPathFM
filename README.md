@@ -1,21 +1,30 @@
-## CP4FewShotPathFM 
+# Towards Reliable Few-Shot Adaptation of Pathology Foundation Models via Conformal Prediction
 
-Run any experiment script directly from your terminal. From this folder:
+
+## Dataset Guide
+
+### Datasets Used
+- **HiCervix Dataset** : [Download Link](https://zenodo.org/records/11087263)
+- **HMU‑GC‑HE‑30K Dataset**: [Download Link](https://figshare.com/articles/dataset/Gastric_Cancer_Histopathology_Tissue_Image_Dataset_GCHTID_/25954813)
+
+## Experiments 
+Run any experiment script directly from your terminal using the below:
+
+### Baseline
+```bash
+python baseline.py --embeddings "C:\path\to\embeddings.pt"
+```
+
+### Baseline++ 
+```bash
+python baseline++.py --embeddings "C:\path\to\embeddings.pt"
+```
 
 ### Prototype Networks
 ```bash
 python prototype.py --embeddings "C:\path\to\embeddings.pt"
 ```
 
-### Baseline++ Cosine Classifier
-```bash
-python baseline++.py --embeddings "C:\path\to\embeddings.pt"
-```
-
-### Logistic Regression Baseline
-```bash
-python baseline.py --embeddings "C:\path\to\embeddings.pt"
-```
 
 Notes:
 - The `--embeddings` (or `-e`) argument is optional. If omitted, each script searches common default paths.
