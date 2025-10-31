@@ -7,6 +7,8 @@
 - **HiCervix Dataset** : [Download Link](https://zenodo.org/records/11087263)
 - **HMU‑GC‑HE‑30K Dataset**: [Download Link](https://figshare.com/articles/dataset/Gastric_Cancer_Histopathology_Tissue_Image_Dataset_GCHTID_/25954813)
 
+### Embeddings: [Download Link](https://drive.google.com/drive/folders/1aYn_sCpJyRFr3JUXvn9n0jXBCIYcDj-o?usp=sharing)
+
 ## Experiments 
 Run any experiment script directly from your terminal using the below:
 
